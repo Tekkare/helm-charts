@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  temporal:
+  - apiVersion: v2
+    appVersion: 0.39.41-alpha
+    created: "2022-07-29T16:56:01.651341+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Helm chart to deploy airbyte-temporal
+    digest: 82077710d44fac1f7f3d71c662e22a26c879138be2a11dbdeaa9e4f643a93a1a
+    name: temporal
+    type: application
+    urls:
+    - temporal-0.39.37.tgz
+    version: 0.39.36
+generated: "2022-07-29T16:56:01.647831+02:00"

@@ -11,16 +11,18 @@ Once Helm has been set up correctly, add the repo as follows:
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
-the latest versions of the packages.  You can then run `helm search repo airbyte-os` to see the charts.
+the latest versions of the packages.  You can then run `helm search repo oip-charts` to see the charts.
 
-To install the airbyte(as a whole) chart:
+
+### Example ###
+To install the airbyte temporal chart:
 
 ```
-    helm install airbyte airbyte-oss/airbyte
+    helm install temporal oip-charts/temporal
 ```
 
 To uninstall the chart:
 
 ```
-    helm delete airbyte
+    helm delete temporal
 ```

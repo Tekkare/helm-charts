@@ -16,5 +16,5 @@ entries:
     type: application
     urls:
     - temporal-0.39.37.tgz
-    version: 0.39.36
+    version: 0.39.37
 generated: "2022-07-29T17:02:29.226452+02:00"

@@ -3,7 +3,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2022-07-29T16:56:01.651341+02:00"
+    created: "2022-07-29T17:02:29.231493+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -17,4 +17,4 @@ entries:
     urls:
     - temporal-0.39.37.tgz
     version: 0.39.36
-generated: "2022-07-29T16:56:01.647831+02:00"
+generated: "2022-07-29T17:02:29.226452+02:00"

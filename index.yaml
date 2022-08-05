@@ -3,7 +3,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2022-08-05T17:18:56.8272+02:00"
+    created: "2022-08-05T21:27:47.092817+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -20,7 +20,46 @@ entries:
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-05T17:18:56.861052+02:00"
+    created: "2022-08-05T21:27:47.153248+02:00"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: 0.14.3
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 15.1.3
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.16.3
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 5.0.10
+    description: Temporal is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: 1449d971d3cc46ee35d11d17eda4725cba19ea34e257e836d8decaf2a2f8f4d9
+    home: https://temporal.io/
+    keywords:
+    - temporal
+    - workflow
+    - orchestration
+    maintainers:
+    - name: Temporal Technologies Inc.
+      url: https://temporal.io/
+    name: temporal-stack
+    sources:
+    - https://github.com/temporalio/temporal
+    type: application
+    urls:
+    - temporal-stack-0.17.5.tgz
+    version: 0.17.5
+  - apiVersion: v2
+    appVersion: 1.17.2
+    created: "2022-08-05T21:27:47.140662+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -59,7 +98,7 @@ entries:
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-05T17:18:56.851244+02:00"
+    created: "2022-08-05T21:27:47.130526+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -98,7 +137,7 @@ entries:
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-05T17:18:56.841022+02:00"
+    created: "2022-08-05T21:27:47.106355+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -135,4 +174,4 @@ entries:
     urls:
     - temporal-stack-0.17.2.tgz
     version: 0.17.2
-generated: "2022-08-05T17:18:56.823396+02:00"
+generated: "2022-08-05T21:27:47.088486+02:00"

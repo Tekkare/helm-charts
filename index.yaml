@@ -3,7 +3,22 @@ entries:
   oip-directus:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T20:39:23.682316+02:00"
+    created: "2022-08-22T20:46:29.588285+02:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.11
+    description: A Helm chart for Kubernetes
+    digest: ab5d3832dba102a2553477d9debd9a9a766bd1c531aad4e333ff4e12bdb68dea
+    name: oip-directus
+    type: application
+    urls:
+    - oip-directus-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-22T20:46:29.580775+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -18,7 +33,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T20:39:23.673555+02:00"
+    created: "2022-08-22T20:46:29.573052+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -33,7 +48,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T20:39:23.664902+02:00"
+    created: "2022-08-22T20:46:29.565303+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -48,7 +63,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-22T20:39:23.657585+02:00"
+    created: "2022-08-22T20:46:29.558468+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -64,7 +79,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2022-08-22T20:39:23.685532+02:00"
+    created: "2022-08-22T20:46:29.591344+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -81,7 +96,7 @@ entries:
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.707322+02:00"
+    created: "2022-08-22T20:46:29.613083+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -120,7 +135,7 @@ entries:
     version: 0.17.11
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.695739+02:00"
+    created: "2022-08-22T20:46:29.602483+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -159,7 +174,7 @@ entries:
     version: 0.17.10
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.791886+02:00"
+    created: "2022-08-22T20:46:29.688592+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -198,7 +213,7 @@ entries:
     version: 0.17.9
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.780423+02:00"
+    created: "2022-08-22T20:46:29.678635+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -237,7 +252,7 @@ entries:
     version: 0.17.8
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.769985+02:00"
+    created: "2022-08-22T20:46:29.668765+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -276,7 +291,7 @@ entries:
     version: 0.17.7
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.759627+02:00"
+    created: "2022-08-22T20:46:29.658101+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -315,7 +330,7 @@ entries:
     version: 0.17.6
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.749582+02:00"
+    created: "2022-08-22T20:46:29.648696+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -354,7 +369,7 @@ entries:
     version: 0.17.5
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.739955+02:00"
+    created: "2022-08-22T20:46:29.639494+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -393,7 +408,7 @@ entries:
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.728407+02:00"
+    created: "2022-08-22T20:46:29.630544+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -432,7 +447,7 @@ entries:
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-08-22T20:39:23.718007+02:00"
+    created: "2022-08-22T20:46:29.62181+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -469,4 +484,4 @@ entries:
     urls:
     - temporal-stack-0.17.2.tgz
     version: 0.17.2
-generated: "2022-08-22T20:39:23.648126+02:00"
+generated: "2022-08-22T20:46:29.549942+02:00"

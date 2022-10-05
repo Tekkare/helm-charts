@@ -14,6 +14,13 @@ If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo oip-charts` to see the charts.
 
 
+### Update helm repo
+`helm repo update oip-charts`
+
+then check update 
+`helm search repo`
+
+
 ### Example ###
 To install the airbyte temporal chart:
 

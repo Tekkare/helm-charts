@@ -3,7 +3,17 @@ entries:
   oip-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.550054+02:00"
+    created: "2022-10-05T18:00:19.237345+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 6cb3f5ec8ee53c958095bbc8eb4464188b6b9c26bc7131d9f79e0fe82a152dd4
+    name: oip-api
+    type: application
+    urls:
+    - oip-api-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-05T18:00:19.23428+02:00"
     description: A Helm chart for Kubernetes
     digest: 8c05755233d261e1823c4b804eb709f90363b47a15b60a9c6bd28ff87d05ba7e
     name: oip-api
@@ -14,7 +24,7 @@ entries:
   oip-directus:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.612971+02:00"
+    created: "2022-10-05T18:00:19.318102+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -29,7 +39,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.605119+02:00"
+    created: "2022-10-05T18:00:19.307205+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -44,7 +54,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.597511+02:00"
+    created: "2022-10-05T18:00:19.29698+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -59,7 +69,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.590004+02:00"
+    created: "2022-10-05T18:00:19.286399+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -74,7 +84,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.581165+02:00"
+    created: "2022-10-05T18:00:19.276841+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -89,7 +99,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.572382+02:00"
+    created: "2022-10-05T18:00:19.267144+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -104,7 +114,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.564314+02:00"
+    created: "2022-10-05T18:00:19.257619+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -119,7 +129,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-03T18:18:24.557765+02:00"
+    created: "2022-10-05T18:00:19.247682+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -135,7 +145,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2022-10-03T18:18:24.615431+02:00"
+    created: "2022-10-05T18:00:19.32262+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -152,7 +162,7 @@ entries:
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.632925+02:00"
+    created: "2022-10-05T18:00:19.356927+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -191,7 +201,7 @@ entries:
     version: 0.17.11
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.62414+02:00"
+    created: "2022-10-05T18:00:19.337972+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -230,7 +240,7 @@ entries:
     version: 0.17.10
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.696231+02:00"
+    created: "2022-10-05T18:00:19.442618+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -269,7 +279,7 @@ entries:
     version: 0.17.9
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.687526+02:00"
+    created: "2022-10-05T18:00:19.432299+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -308,7 +318,7 @@ entries:
     version: 0.17.8
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.679545+02:00"
+    created: "2022-10-05T18:00:19.421808+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -347,7 +357,7 @@ entries:
     version: 0.17.7
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.671683+02:00"
+    created: "2022-10-05T18:00:19.411332+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -386,7 +396,7 @@ entries:
     version: 0.17.6
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.66392+02:00"
+    created: "2022-10-05T18:00:19.401071+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -425,7 +435,7 @@ entries:
     version: 0.17.5
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.656478+02:00"
+    created: "2022-10-05T18:00:19.390809+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -464,7 +474,7 @@ entries:
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.649136+02:00"
+    created: "2022-10-05T18:00:19.380064+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -503,7 +513,7 @@ entries:
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-03T18:18:24.641734+02:00"
+    created: "2022-10-05T18:00:19.368225+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -540,4 +550,4 @@ entries:
     urls:
     - temporal-stack-0.17.2.tgz
     version: 0.17.2
-generated: "2022-10-03T18:18:24.548226+02:00"
+generated: "2022-10-05T18:00:19.229722+02:00"

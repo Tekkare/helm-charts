@@ -4,12 +4,16 @@ metadata:
   name: {{ include "oip-api.fullname" . }}
   labels:
     {{- include "oip-api.labels" . | nindent 4 }}
+  {{- with .Values.service.annotations }}
+  annotations:
+  {{-   toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
+    - name: http
+      port: {{ .Values.service.servicePort }}
+      targetPort: {{ .Values.service.targetPort | default 80 }}
   selector:
     {{- include "oip-api.selectorLabels" . | nindent 4 }}
+

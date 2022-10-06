@@ -62,3 +62,7 @@ ingress:
     - hosts:
         - oip-api.local
       secretName: oip-api-tls
+
+admin:
+  defaultEmail: teamdevops@realconsultingdata.com
+  defaultPassword: eMcP!?7$cK$mALn9

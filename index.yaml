@@ -3,7 +3,17 @@ entries:
   oip-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.237345+02:00"
+    created: "2022-10-06T14:05:29.626295+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 1a292dd7c8b66d4fdef3f4fb53f88e9055cab25ba6ecc7ca24bebb26befae6e2
+    name: oip-api
+    type: application
+    urls:
+    - oip-api-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-06T14:05:29.621935+02:00"
     description: A Helm chart for Kubernetes
     digest: 6cb3f5ec8ee53c958095bbc8eb4464188b6b9c26bc7131d9f79e0fe82a152dd4
     name: oip-api
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.23428+02:00"
+    created: "2022-10-06T14:05:29.615853+02:00"
     description: A Helm chart for Kubernetes
     digest: 8c05755233d261e1823c4b804eb709f90363b47a15b60a9c6bd28ff87d05ba7e
     name: oip-api
@@ -24,7 +34,7 @@ entries:
   oip-directus:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.318102+02:00"
+    created: "2022-10-06T14:05:29.710323+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -39,7 +49,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.307205+02:00"
+    created: "2022-10-06T14:05:29.700134+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -54,7 +64,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.29698+02:00"
+    created: "2022-10-06T14:05:29.691032+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -69,7 +79,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.286399+02:00"
+    created: "2022-10-06T14:05:29.682086+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -84,7 +94,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.276841+02:00"
+    created: "2022-10-06T14:05:29.667244+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -99,7 +109,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.267144+02:00"
+    created: "2022-10-06T14:05:29.65628+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -114,7 +124,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.257619+02:00"
+    created: "2022-10-06T14:05:29.644227+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -129,7 +139,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-05T18:00:19.247682+02:00"
+    created: "2022-10-06T14:05:29.634417+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -145,7 +155,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2022-10-05T18:00:19.32262+02:00"
+    created: "2022-10-06T14:05:29.713925+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -162,7 +172,7 @@ entries:
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.356927+02:00"
+    created: "2022-10-06T14:05:29.735465+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -201,7 +211,7 @@ entries:
     version: 0.17.11
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.337972+02:00"
+    created: "2022-10-06T14:05:29.724316+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -240,7 +250,7 @@ entries:
     version: 0.17.10
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.442618+02:00"
+    created: "2022-10-06T14:05:29.823252+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -279,7 +289,7 @@ entries:
     version: 0.17.9
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.432299+02:00"
+    created: "2022-10-06T14:05:29.811639+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -318,7 +328,7 @@ entries:
     version: 0.17.8
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.421808+02:00"
+    created: "2022-10-06T14:05:29.801505+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -357,7 +367,7 @@ entries:
     version: 0.17.7
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.411332+02:00"
+    created: "2022-10-06T14:05:29.790306+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -396,7 +406,7 @@ entries:
     version: 0.17.6
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.401071+02:00"
+    created: "2022-10-06T14:05:29.779411+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -435,7 +445,7 @@ entries:
     version: 0.17.5
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.390809+02:00"
+    created: "2022-10-06T14:05:29.769098+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -474,7 +484,7 @@ entries:
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.380064+02:00"
+    created: "2022-10-06T14:05:29.758235+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -513,7 +523,7 @@ entries:
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2022-10-05T18:00:19.368225+02:00"
+    created: "2022-10-06T14:05:29.746814+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -550,4 +560,4 @@ entries:
     urls:
     - temporal-stack-0.17.2.tgz
     version: 0.17.2
-generated: "2022-10-05T18:00:19.229722+02:00"
+generated: "2022-10-06T14:05:29.611776+02:00"

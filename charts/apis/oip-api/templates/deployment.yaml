@@ -56,3 +56,7 @@ spec:
               value : "{{ .Values.postgres.port }}"
             - name: SERVER_PORT
               value : "{{ .Values.service.servicePort | default 80 }}"
+            - name: ADMIN_EMAIL
+              value : "{{ .Values.admin.defaultEmail | default "admin@example.com" }}"
+            - name: ADMIN_PASSWORD
+              value: "{{ .Values.admin.defaultPassword | default "secret" }}"

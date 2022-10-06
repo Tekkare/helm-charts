@@ -64,5 +64,5 @@ ingress:
       secretName: oip-api-tls
 
 admin:
-  defaultEmail: teamdevops@realconsultingdata.com
-  defaultPassword: eMcP!?7$cK$mALn9
+  defaultEmail: admin@example.com
+  defaultPassword: changepassword

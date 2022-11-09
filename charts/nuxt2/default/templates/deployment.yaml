@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "nuxt2-spa.fullname" . }}
+  labels:
+    {{- include "nuxt2-spa.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      {{- include "nuxt2-spa.selectorLabels" . | nindent 6 }}
+  revisionHistoryLimit: {{ .Values.revisionHistoryLimit }}
+  template:
+    metadata:
+      labels:
+        {{- include "nuxt2-spa.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: "{{  .Chart.Name  }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.service.servicePort}}
+          resources:
+            {{ toYaml .Values.resources }}
+
+          env:
+            - name: NODE_ENV
+              value: '{{ .Values.config.nodeEnv | default "prod" }}'
+          {{- range $key, $val := .Values.config.extraEnvVars }}
+            - name: {{ $key }}
+              value: "{{ $val }}"
+          {{- end}}

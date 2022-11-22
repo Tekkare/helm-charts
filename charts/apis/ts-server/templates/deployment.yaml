@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "ts-server.fullname" . }}
+  labels:
+    {{- include "ts-server.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  selector:
+    matchLabels:
+      {{- include "ts-server.selectorLabels" . | nindent 6 }}
+  revisionHistoryLimit: {{ .Values.revisionHistoryLimit }}
+  template:
+    metadata:
+      labels:
+        {{- include "ts-server.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: "{{  .Chart.Name  }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.service.servicePort}}
+          resources:
+            {{ toYaml .Values.resources }}
+
+          env:
+            - name: DB_PASSWORD
+              {{- if .Values.postgres.password.value }}
+              value:  "{{ .Values.postgres.password.value }}"
+              {{- else }}
+              valueFrom:
+                secretKeyRef:
+                  key:  {{ .Values.postgres.password.fromSecret.key }}
+                  name: {{ .Values.postgres.password.fromSecret.name }}
+              {{ end }}
+            - name: DB_USERNAME
+              {{- if .Values.postgres.user.value }}
+              value: "{{ .Values.postgres.user.value }}"
+              {{- else }}
+              valueFrom:
+                secretKeyRef:
+                  key: {{ .Values.postgres.user.fromSecret.key }}
+                  name: {{ .Values.postgres.user.fromSecret.name }}
+              {{ end }}
+            - name: DB_DATABASE
+              value : "{{ .Values.postgres.db }}"
+            - name: DB_HOST
+              value : "{{ .Values.postgres.host }}"
+            - name: PG_PORT
+              value : "{{ .Values.postgres.port }}"
+            - name: SERVER_PORT
+              value : "{{ .Values.service.servicePort | default 80 }}"
+            {{- if .Values.config.blockchain.enabled }}
+            - name: MINA_PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  key:  {{ .Values.config.blockchain.mina.pvKeySecretKey }}
+                  name: {{ .Values.config.blockchain.mina.pvKeySecretName }}
+            {{ end }}
+          {{- range $key, $val := .Values.config.extraEnvVars }}
+            - name: {{ $key }}
+              value: "{{ $val }}"
+          {{- end}}

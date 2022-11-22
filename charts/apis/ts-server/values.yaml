@@ -64,6 +64,8 @@ ingress:
       secretName: oip-api-tls
 
 config:
+  appSecretKey: "APP_SECRET"
+  appSecretName: "my-secret"
   extraEnvVars:
     TEST: "this"
   blockchain:

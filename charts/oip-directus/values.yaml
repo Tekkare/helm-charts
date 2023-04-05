@@ -27,8 +27,8 @@ service:
   type: ClusterIP
   port: 80
 
-deployment:
-  port: 8080
+# deployment:
+#   port: 8080
 
 ingress:
   enabled: false

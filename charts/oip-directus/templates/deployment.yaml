@@ -40,14 +40,14 @@ spec:
           {{- end }}
           env:
             - name: PORT
-              value: {{ .Values.deployment.port | default "8080"}}
+              value: "8080"
             {{- if .Values.extraEnvVars }}
             {{- tpl (toYaml .Values.extraEnvVars) $ | nindent 12 }}
             {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: {{ .Values.deployment.port | default "8080"}}
+              containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:

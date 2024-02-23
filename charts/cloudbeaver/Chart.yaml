@@ -1,0 +1,11 @@
+apiVersion: v2
+description: A Helm chart for Kubernetes to deploy cloudbeaver
+name: cloudbeaver
+keywords:
+  - cloudbeaver
+  - dbclient
+version: 1.0.0
+maintainers:
+  - email: davi.barreto@tekkare.com
+    name: davi.barreto
+appVersion: v21.3.0

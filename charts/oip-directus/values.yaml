@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: eu.gcr.io/oip-cluster/realconsultingdata/apis/bitbucket_realconsultingdata_directus-example
+  repository: eu.gcr.io/oip-cluster/realconsultingdata/apis/oip-directus
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "main"

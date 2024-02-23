@@ -4,8 +4,8 @@ name: cloudbeaver
 keywords:
   - cloudbeaver
   - dbclient
-version: 1.0.0
+version: 23.3.1
 maintainers:
   - email: davi.barreto@tekkare.com
     name: davi.barreto
-appVersion: v21.3.0
+appVersion: v23.3.1

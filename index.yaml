@@ -3,7 +3,7 @@ entries:
   cloudbeaver:
   - apiVersion: v2
     appVersion: v23.3.1
-    created: "2024-03-06T14:02:37.714387+01:00"
+    created: "2024-03-06T15:23:43.210348+01:00"
     description: A Helm chart for Kubernetes to deploy cloudbeaver
     digest: 40beb8bdd01519b01d25e6b26c2f8b4d9267de657cf6b729c8d7dfe0e898ed70
     keywords:
@@ -18,7 +18,7 @@ entries:
     version: 23.3.1
   - apiVersion: v2
     appVersion: v21.3.0
-    created: "2024-03-06T14:02:37.714174+01:00"
+    created: "2024-03-06T15:23:43.209958+01:00"
     description: A Helm chart for Kubernetes to deploy cloudbeaver
     digest: 4bd430f2236b7b3707f25414d0ec5123038cc4ad37b84d81c5b7b75205ec1f62
     keywords:
@@ -34,7 +34,7 @@ entries:
   nuxt2-spa:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.714845+01:00"
+    created: "2024-03-06T15:23:43.211139+01:00"
     description: A Helm chart for Nuxt single page applicati
     digest: a260eab6f01d5faba3334a6c7408afb98c42ce7d124ef33cd2e4b78dc4ac1de6
     name: nuxt2-spa
@@ -44,7 +44,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.714618+01:00"
+    created: "2024-03-06T15:23:43.210715+01:00"
     description: A Helm chart for Nuxt single page applicati
     digest: e16ce3332e75df4b3957ec526326ab42a1d6185c76d7f4946c9eb0d8612e39b0
     name: nuxt2-spa
@@ -55,7 +55,7 @@ entries:
   nuxt3:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.715059+01:00"
+    created: "2024-03-06T15:23:43.211395+01:00"
     description: A Helm chart for Nuxt3 SSR
     digest: 4e3b1f155e49516778e6970d134194cb0376a8f6b7fc7d7ed1f01e6dfab30183
     name: nuxt3
@@ -66,7 +66,7 @@ entries:
   oip-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.715866+01:00"
+    created: "2024-03-06T15:23:43.212541+01:00"
     description: A Helm chart for Kubernetes
     digest: 1a292dd7c8b66d4fdef3f4fb53f88e9055cab25ba6ecc7ca24bebb26befae6e2
     name: oip-api
@@ -76,7 +76,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.715584+01:00"
+    created: "2024-03-06T15:23:43.212148+01:00"
     description: A Helm chart for Kubernetes
     digest: 6cb3f5ec8ee53c958095bbc8eb4464188b6b9c26bc7131d9f79e0fe82a152dd4
     name: oip-api
@@ -86,7 +86,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.71528+01:00"
+    created: "2024-03-06T15:23:43.211667+01:00"
     description: A Helm chart for Kubernetes
     digest: 8c05755233d261e1823c4b804eb709f90363b47a15b60a9c6bd28ff87d05ba7e
     name: oip-api
@@ -97,7 +97,7 @@ entries:
   oip-directus:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.731221+01:00"
+    created: "2024-03-06T15:23:43.228695+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -112,7 +112,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.727247+01:00"
+    created: "2024-03-06T15:23:43.224713+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -127,7 +127,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.768723+01:00"
+    created: "2024-03-06T15:23:43.264726+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -142,7 +142,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.764726+01:00"
+    created: "2024-03-06T15:23:43.26159+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -157,7 +157,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.760905+01:00"
+    created: "2024-03-06T15:23:43.257807+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -172,7 +172,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.755707+01:00"
+    created: "2024-03-06T15:23:43.253098+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -187,7 +187,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.749908+01:00"
+    created: "2024-03-06T15:23:43.247956+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -202,7 +202,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.745032+01:00"
+    created: "2024-03-06T15:23:43.243054+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -217,7 +217,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.740109+01:00"
+    created: "2024-03-06T15:23:43.238091+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -232,7 +232,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.735794+01:00"
+    created: "2024-03-06T15:23:43.232954+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -247,7 +247,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.723689+01:00"
+    created: "2024-03-06T15:23:43.220921+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -262,7 +262,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-06T14:02:37.719729+01:00"
+    created: "2024-03-06T15:23:43.217306+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -278,7 +278,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2024-03-06T14:02:37.769438+01:00"
+    created: "2024-03-06T15:23:43.265887+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -295,7 +295,7 @@ entries:
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.784015+01:00"
+    created: "2024-03-06T15:23:43.279471+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -334,7 +334,7 @@ entries:
     version: 0.17.11
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.776882+01:00"
+    created: "2024-03-06T15:23:43.27291+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -373,7 +373,7 @@ entries:
     version: 0.17.10
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.835463+01:00"
+    created: "2024-03-06T15:23:43.331889+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -412,7 +412,7 @@ entries:
     version: 0.17.9
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.829113+01:00"
+    created: "2024-03-06T15:23:43.325454+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -451,7 +451,7 @@ entries:
     version: 0.17.8
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.822625+01:00"
+    created: "2024-03-06T15:23:43.318423+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -490,7 +490,7 @@ entries:
     version: 0.17.7
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.81611+01:00"
+    created: "2024-03-06T15:23:43.311464+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -529,7 +529,7 @@ entries:
     version: 0.17.6
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.80971+01:00"
+    created: "2024-03-06T15:23:43.304619+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -568,7 +568,7 @@ entries:
     version: 0.17.5
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.802708+01:00"
+    created: "2024-03-06T15:23:43.298148+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -607,7 +607,7 @@ entries:
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.796735+01:00"
+    created: "2024-03-06T15:23:43.291795+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -646,7 +646,7 @@ entries:
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2024-03-06T14:02:37.790151+01:00"
+    created: "2024-03-06T15:23:43.285799+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -686,7 +686,17 @@ entries:
   ts-server:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-03-06T14:02:37.836424+01:00"
+    created: "2024-03-06T15:23:43.334005+01:00"
+    description: A Helm chart for Kubernetes
+    digest: c6510719feac9bcfc18753b6d3df6ddac425ae3ad12af90a29ce3d455b646979
+    name: ts-server
+    type: application
+    urls:
+    - ts-server-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2024-03-06T15:23:43.333802+01:00"
     description: A Helm chart for Kubernetes
     digest: 6313e448e3bf1b9eafe2d6036b5c6c481286df208dc3f36c222222b5c868f850
     name: ts-server
@@ -696,7 +706,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-03-06T14:02:37.836201+01:00"
+    created: "2024-03-06T15:23:43.333553+01:00"
     description: A Helm chart for Kubernetes
     digest: dceec01cf427c88db5a7ae767ae0a8590b3b623f560b9ba79cae08020849d7f8
     name: ts-server
@@ -706,7 +716,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-03-06T14:02:37.835956+01:00"
+    created: "2024-03-06T15:23:43.333102+01:00"
     description: A Helm chart for Kubernetes
     digest: b505757eee9e49508090c2cb77e9859836e83bf6b19a19ac5cb5e9ee18ce81e0
     name: ts-server
@@ -716,7 +726,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-03-06T14:02:37.835708+01:00"
+    created: "2024-03-06T15:23:43.33266+01:00"
     description: A Helm chart for Kubernetes
     digest: f26803cc63fca752546186b34741bd70cedd3d163633910dd936a7ccd5464ef7
     name: ts-server
@@ -724,4 +734,4 @@ entries:
     urls:
     - ts-server-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-06T14:02:37.713818+01:00"
+generated: "2024-03-06T15:23:43.209306+01:00"

@@ -63,7 +63,7 @@ spec:
                   key:  {{ .Values.config.blockchain.mina.pvKeySecretKey }}
                   name: {{ .Values.config.blockchain.mina.pvKeySecretName }}
             {{ end }}
-            {{- if and .Values.config.appSecretKey .Values.config.appSecretName }}
+            {{- if and (.Values.config.appSecretKey | trim) (.Values.config.appSecretName | trim) }}
             - name: APP_SECRET
               valueFrom:
                 secretKeyRef:

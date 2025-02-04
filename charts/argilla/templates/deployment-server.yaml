@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "argilla.fullname" . }}-server
+  labels:
+    {{- include "argilla.labels" . | nindent 4 }}
+    app.kubernetes.io/component: server
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "argilla.name" . }}
+      app.kubernetes.io/component: server
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "argilla.name" . }}
+        app.kubernetes.io/component: server
+    spec:
+      containers:
+        - name: server
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 6900
+              name: http
+          env:
+            - name: ARGILLA_HOME_PATH
+              value: {{ .Values.env.ARGILLA_HOME_PATH | quote }}
+            - name: ARGILLA_ELASTICSEARCH
+              value: {{ .Values.env.ARGILLA_ELASTICSEARCH | quote }}
+            - name: ARGILLA_DATABASE_URL
+              value: {{ .Values.env.ARGILLA_DATABASE_URL | quote }}
+            - name: ARGILLA_REDIS_URL
+              value: {{ .Values.env.ARGILLA_REDIS_URL | quote }}
+            - name: USERNAME
+              value: {{ .Values.env.USERNAME | quote }}
+            - name: PASSWORD
+              value: {{ .Values.env.PASSWORD | quote }}
+            - name: API_KEY
+              value: {{ .Values.env.API_KEY | quote }}
+            - name: WORKSPACE
+              value: {{ .Values.env.WORKSPACE | quote }}
+          {{- if .Values.persistence.enabled }}
+          volumeMounts:
+            - name: argilla-data
+              mountPath: /var/lib/argilla
+          {{- end }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- if .Values.persistence.enabled }}
+      volumes:
+        - name: argilla-data
+          persistentVolumeClaim:
+            claimName: {{ include "argilla.fullname" . }}-pvc
+      {{- end }}
+      nodeSelector:
+        {{- toYaml .Values.nodeSelector | nindent 8 }}
+      tolerations:
+        {{- toYaml .Values.tolerations | nindent 8 }}
+      affinity:
+        {{- toYaml .Values.affinity | nindent 8 }}

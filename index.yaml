@@ -3,7 +3,22 @@ entries:
   argilla:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-02-06T00:05:54.739404+01:00"
+    created: "2025-02-06T00:13:15.258706+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.3.14
+    description: A Helm chart for Argilla Server on Kubernetes
+    digest: bbca3bae1fe7122a3696e19eddccbdbeab26fa9ec21d40ae8f4c5c1858b20590
+    name: argilla
+    type: application
+    urls:
+    - argilla-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: latest
+    created: "2025-02-06T00:13:15.251831+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -18,7 +33,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: latest
-    created: "2025-02-06T00:05:54.734701+01:00"
+    created: "2025-02-06T00:13:15.246522+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -33,7 +48,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: latest
-    created: "2025-02-06T00:05:54.729521+01:00"
+    created: "2025-02-06T00:13:15.240075+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -48,7 +63,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: latest
-    created: "2025-02-06T00:05:54.72513+01:00"
+    created: "2025-02-06T00:13:15.234599+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -63,7 +78,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: latest
-    created: "2025-02-06T00:05:54.720678+01:00"
+    created: "2025-02-06T00:13:15.230126+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -79,7 +94,7 @@ entries:
   cloudbeaver:
   - apiVersion: v2
     appVersion: v23.3.1
-    created: "2025-02-06T00:05:54.741097+01:00"
+    created: "2025-02-06T00:13:15.260206+01:00"
     description: A Helm chart for Kubernetes to deploy cloudbeaver
     digest: 40beb8bdd01519b01d25e6b26c2f8b4d9267de657cf6b729c8d7dfe0e898ed70
     keywords:
@@ -94,7 +109,7 @@ entries:
     version: 23.3.1
   - apiVersion: v2
     appVersion: v21.3.0
-    created: "2025-02-06T00:05:54.740443+01:00"
+    created: "2025-02-06T00:13:15.259508+01:00"
     description: A Helm chart for Kubernetes to deploy cloudbeaver
     digest: 4bd430f2236b7b3707f25414d0ec5123038cc4ad37b84d81c5b7b75205ec1f62
     keywords:
@@ -110,7 +125,7 @@ entries:
   nuxt2-spa:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.742428+01:00"
+    created: "2025-02-06T00:13:15.26162+01:00"
     description: A Helm chart for Nuxt single page applicati
     digest: a260eab6f01d5faba3334a6c7408afb98c42ce7d124ef33cd2e4b78dc4ac1de6
     name: nuxt2-spa
@@ -120,7 +135,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.741772+01:00"
+    created: "2025-02-06T00:13:15.260895+01:00"
     description: A Helm chart for Nuxt single page applicati
     digest: e16ce3332e75df4b3957ec526326ab42a1d6185c76d7f4946c9eb0d8612e39b0
     name: nuxt2-spa
@@ -131,7 +146,7 @@ entries:
   nuxt3:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.743+01:00"
+    created: "2025-02-06T00:13:15.262311+01:00"
     description: A Helm chart for Nuxt3 SSR
     digest: 4e3b1f155e49516778e6970d134194cb0376a8f6b7fc7d7ed1f01e6dfab30183
     name: nuxt3
@@ -142,7 +157,7 @@ entries:
   oip-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.745069+01:00"
+    created: "2025-02-06T00:13:15.264481+01:00"
     description: A Helm chart for Kubernetes
     digest: 1a292dd7c8b66d4fdef3f4fb53f88e9055cab25ba6ecc7ca24bebb26befae6e2
     name: oip-api
@@ -152,7 +167,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.744426+01:00"
+    created: "2025-02-06T00:13:15.263702+01:00"
     description: A Helm chart for Kubernetes
     digest: 6cb3f5ec8ee53c958095bbc8eb4464188b6b9c26bc7131d9f79e0fe82a152dd4
     name: oip-api
@@ -162,7 +177,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.743735+01:00"
+    created: "2025-02-06T00:13:15.262949+01:00"
     description: A Helm chart for Kubernetes
     digest: 8c05755233d261e1823c4b804eb709f90363b47a15b60a9c6bd28ff87d05ba7e
     name: oip-api
@@ -173,7 +188,7 @@ entries:
   oip-directus:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.758338+01:00"
+    created: "2025-02-06T00:13:15.278399+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -188,7 +203,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.755233+01:00"
+    created: "2025-02-06T00:13:15.27495+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -203,7 +218,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.790382+01:00"
+    created: "2025-02-06T00:13:15.309556+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -218,7 +233,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.787081+01:00"
+    created: "2025-02-06T00:13:15.306291+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -233,7 +248,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.783828+01:00"
+    created: "2025-02-06T00:13:15.30292+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -248,7 +263,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.779477+01:00"
+    created: "2025-02-06T00:13:15.298724+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -263,7 +278,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.7747+01:00"
+    created: "2025-02-06T00:13:15.29417+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -278,7 +293,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.77059+01:00"
+    created: "2025-02-06T00:13:15.290101+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -293,7 +308,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.76648+01:00"
+    created: "2025-02-06T00:13:15.286085+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -308,7 +323,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.762484+01:00"
+    created: "2025-02-06T00:13:15.282297+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -323,7 +338,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.751742+01:00"
+    created: "2025-02-06T00:13:15.271781+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -338,7 +353,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-06T00:05:54.748133+01:00"
+    created: "2025-02-06T00:13:15.26795+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -354,7 +369,7 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2025-02-06T00:05:54.79145+01:00"
+    created: "2025-02-06T00:13:15.310494+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -371,7 +386,7 @@ entries:
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.803712+01:00"
+    created: "2025-02-06T00:13:15.322086+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -410,7 +425,7 @@ entries:
     version: 0.17.11
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.79734+01:00"
+    created: "2025-02-06T00:13:15.316291+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -449,7 +464,7 @@ entries:
     version: 0.17.10
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.848734+01:00"
+    created: "2025-02-06T00:13:15.366872+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -488,7 +503,7 @@ entries:
     version: 0.17.9
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.843064+01:00"
+    created: "2025-02-06T00:13:15.360763+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -527,7 +542,7 @@ entries:
     version: 0.17.8
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.837011+01:00"
+    created: "2025-02-06T00:13:15.354737+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -566,7 +581,7 @@ entries:
     version: 0.17.7
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.831135+01:00"
+    created: "2025-02-06T00:13:15.349048+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -605,7 +620,7 @@ entries:
     version: 0.17.6
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.825341+01:00"
+    created: "2025-02-06T00:13:15.343368+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -644,7 +659,7 @@ entries:
     version: 0.17.5
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.8199+01:00"
+    created: "2025-02-06T00:13:15.338069+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -683,7 +698,7 @@ entries:
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.81451+01:00"
+    created: "2025-02-06T00:13:15.332573+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -722,7 +737,7 @@ entries:
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2025-02-06T00:05:54.809272+01:00"
+    created: "2025-02-06T00:13:15.327281+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -762,7 +777,7 @@ entries:
   ts-server:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-02-06T00:05:54.85305+01:00"
+    created: "2025-02-06T00:13:15.37101+01:00"
     description: A Helm chart for Kubernetes
     digest: 7394f07efde823579d48b591831c608b1703429d3644218376a47aaf013aab63
     name: ts-server
@@ -772,7 +787,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-02-06T00:05:54.852381+01:00"
+    created: "2025-02-06T00:13:15.370359+01:00"
     description: A Helm chart for Kubernetes
     digest: c6510719feac9bcfc18753b6d3df6ddac425ae3ad12af90a29ce3d455b646979
     name: ts-server
@@ -782,7 +797,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-02-06T00:05:54.851716+01:00"
+    created: "2025-02-06T00:13:15.369705+01:00"
     description: A Helm chart for Kubernetes
     digest: 6313e448e3bf1b9eafe2d6036b5c6c481286df208dc3f36c222222b5c868f850
     name: ts-server
@@ -792,7 +807,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-02-06T00:05:54.850929+01:00"
+    created: "2025-02-06T00:13:15.369034+01:00"
     description: A Helm chart for Kubernetes
     digest: dceec01cf427c88db5a7ae767ae0a8590b3b623f560b9ba79cae08020849d7f8
     name: ts-server
@@ -802,7 +817,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-02-06T00:05:54.850197+01:00"
+    created: "2025-02-06T00:13:15.368362+01:00"
     description: A Helm chart for Kubernetes
     digest: b505757eee9e49508090c2cb77e9859836e83bf6b19a19ac5cb5e9ee18ce81e0
     name: ts-server
@@ -812,7 +827,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-02-06T00:05:54.849513+01:00"
+    created: "2025-02-06T00:13:15.367554+01:00"
     description: A Helm chart for Kubernetes
     digest: f26803cc63fca752546186b34741bd70cedd3d163633910dd936a7ccd5464ef7
     name: ts-server
@@ -820,4 +835,4 @@ entries:
     urls:
     - ts-server-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-06T00:05:54.716952+01:00"
+generated: "2025-02-06T00:13:15.225555+01:00"

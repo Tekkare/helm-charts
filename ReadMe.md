@@ -45,3 +45,10 @@ If you want to build and update chart that are in this directory.
 3. mv tgz to root 
 4. run `helm repo index .`
 5. push to gh-pages branch to publish the new chart version
+
+
+# externally maintained charts. 
+
+some charts available here are maintained from another repo, for example our own fork of an open source software, used for synchronizing helm chart. we list them here. 
+
+- argilla. https://github.com/iam-robi/argilla

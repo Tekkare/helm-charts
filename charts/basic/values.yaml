@@ -7,8 +7,7 @@ image:
   repository: repo
   tag: mytag
   pullPolicy: IfNotPresent
-  resources:
-    {}
+  resources: {}
     # requests:
     #   cpu: 200m
   #   memory: 300Mi

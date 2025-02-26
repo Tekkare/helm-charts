@@ -38,7 +38,8 @@ spec:
                 secretKeyRef:
                   key:  {{ .Values.postgres.password.fromSecret.key }}
                   name: {{ .Values.postgres.password.fromSecret.name }}
-              {{ end }}
+              {{- end }}
+
             - name: DB_USERNAME
               {{- if .Values.postgres.user.value }}
               value: "{{ .Values.postgres.user.value }}"
@@ -47,7 +48,8 @@ spec:
                 secretKeyRef:
                   key: {{ .Values.postgres.user.fromSecret.key }}
                   name: {{ .Values.postgres.user.fromSecret.name }}
-              {{ end }}
+              {{- end }}
+
             - name: DB_DATABASE
               value : "{{ .Values.postgres.db }}"
             - name: DB_HOST
@@ -56,21 +58,24 @@ spec:
               value : "{{ .Values.postgres.port }}"
             - name: SERVER_PORT
               value : "{{ .Values.service.servicePort | default 80 }}"
+
             {{- if .Values.config.blockchain.enabled }}
             - name: MINA_PRIVATE_KEY
               valueFrom:
                 secretKeyRef:
                   key:  {{ .Values.config.blockchain.mina.pvKeySecretKey }}
                   name: {{ .Values.config.blockchain.mina.pvKeySecretName }}
-            {{ end }}
+            {{- end }}
+
             {{- if and (.Values.config.appSecretKey | trim) (.Values.config.appSecretName | trim) }}
             - name: APP_SECRET
               valueFrom:
                 secretKeyRef:
                   key:  {{ .Values.config.appSecretKey }}
                   name: {{ .Values.config.appSecretName }}
-            {{ end }}
-          {{- range $key, $val := .Values.config.extraEnvVars }}
-            - name: {{ $key }}
-              value: "{{ $val }}"
-          {{- end}}
+            {{- end }}
+
+            # Extend with extra environment variables dynamically
+            {{- with .Values.config.extraEnvVars }}
+              {{- toYaml . | nindent 12 }}
+            {{- end }}

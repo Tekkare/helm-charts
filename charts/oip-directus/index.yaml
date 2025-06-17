@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 7.0.4
-    created: "2025-06-17T15:45:38.428859+02:00"
+    created: "2025-06-17T16:03:08.205011+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -33,4 +33,4 @@ entries:
     urls:
     - charts/redis-17.0.11.tgz
     version: 17.0.11
-generated: "2025-06-17T15:45:38.425751+02:00"
+generated: "2025-06-17T16:03:08.200765+02:00"

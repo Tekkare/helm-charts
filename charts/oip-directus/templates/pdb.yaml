@@ -6,7 +6,7 @@ metadata:
   labels:
     {{- include "oip-directus.labels" . | nindent 4 }}
 spec:
-  maxUnavailable: {{ .Values.podDisruptionBudget.maxUnavailable }}
+  minAvailable: {{ .Values.podDisruptionBudget.minAvailable }}
   selector:
     matchLabels:
       {{- include "oip-directus.selectorLabels" . | nindent 6 }}

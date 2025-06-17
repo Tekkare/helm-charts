@@ -200,4 +200,4 @@ extraEnvVars:
 
 podDisruptionBudget:
   enabled: true
-  maxUnavailable: 1
+  minAvailable: 1

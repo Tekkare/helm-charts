@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "oip-directus"
+  name: {{ default "oip-directus" .Values.ingress.name | quote }}
   labels:
     {{- include "oip-directus.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}

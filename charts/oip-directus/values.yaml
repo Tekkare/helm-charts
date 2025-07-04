@@ -33,6 +33,7 @@ deployment:
   port: "8080"
 
 ingress:
+  name: "" # Optional override for Ingress metadata.name
   enabled: false
   className: ""
   annotations:

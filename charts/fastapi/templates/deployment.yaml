@@ -45,7 +45,14 @@ spec:
             {{- tpl (toYaml .Values.extraEnvVars) $ | nindent 12 }}
             {{- end }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-
+          # command: ["uvicorn"]
+          # args:
+          #   - "api.main:app"
+          #   - "--host"
+          #   - "0.0.0.0"
+          #   - "--port"
+          #   - "{{ .Values.deployment.port | default 8080 }}"
+          #   - "--reload"
           ports:
             - name: http
               containerPort: {{ .Values.deployment.port | default 8080 }}

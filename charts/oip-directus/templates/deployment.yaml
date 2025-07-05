@@ -51,11 +51,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: {{ .Values.deployment.probe.path | default "/" | quote }}
               port: http
           readinessProbe:
             httpGet:
-              path: /
+              path: {{ .Values.deployment.probe.path | default "/" | quote }}
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

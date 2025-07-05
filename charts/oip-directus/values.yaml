@@ -31,6 +31,8 @@ service:
 
 deployment:
   port: "8080"
+  probe:
+    path: "/"
 
 ingress:
   name: "" # Optional override for Ingress metadata.name

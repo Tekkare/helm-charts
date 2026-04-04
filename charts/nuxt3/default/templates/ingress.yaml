@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "nuxt3"
+  name: {{ include "nuxt3.fullname" . }}
   labels:
     {{- include "nuxt3.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}

@@ -63,6 +63,8 @@ ingress:
         - oip-api.local
       secretName: oip-api-tls
 
+podSecurityContext: {}
+
 persistence:
   enabled: false
   size: 10Gi

@@ -63,6 +63,14 @@ ingress:
         - oip-api.local
       secretName: oip-api-tls
 
+persistence:
+  enabled: false
+  size: 10Gi
+  storageClass: ""
+  mountPath: /data
+  accessModes:
+    - ReadWriteOnce
+
 config:
   appSecretKey: ""
   appSecretName: ""

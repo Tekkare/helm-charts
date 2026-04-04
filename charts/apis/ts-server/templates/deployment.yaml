@@ -6,11 +6,16 @@ metadata:
     {{- include "ts-server.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  {{- if .Values.persistence.enabled }}
+  strategy:
+    type: Recreate
+  {{- else }}
   strategy:
     type: RollingUpdate
     rollingUpdate:
       maxUnavailable: 0
       maxSurge: 1
+  {{- end }}
   selector:
     matchLabels:
       {{- include "ts-server.selectorLabels" . | nindent 6 }}
@@ -28,6 +33,11 @@ spec:
             - containerPort: {{ .Values.service.servicePort}}
           resources:
             {{ toYaml .Values.resources }}
+          {{- if .Values.persistence.enabled }}
+          volumeMounts:
+            - name: data
+              mountPath: {{ .Values.persistence.mountPath }}
+          {{- end }}
 
           env:
             - name: DB_PASSWORD
@@ -79,3 +89,9 @@ spec:
             {{- with .Values.config.extraEnvVars }}
               {{- toYaml . | nindent 12 }}
             {{- end }}
+      {{- if .Values.persistence.enabled }}
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: {{ include "ts-server.fullname" . }}
+      {{- end }}

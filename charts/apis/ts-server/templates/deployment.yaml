@@ -85,10 +85,10 @@ spec:
                   name: {{ .Values.config.appSecretName }}
             {{- end }}
 
-            # Extend with extra environment variables dynamically
-            {{- with .Values.config.extraEnvVars }}
-              {{- toYaml . | nindent 12 }}
-            {{- end }}
+          {{- range $key, $val := .Values.config.extraEnvVars }}
+            - name: {{ $key }}
+              value: "{{ $val }}"
+          {{- end }}
       {{- if .Values.persistence.enabled }}
       volumes:
         - name: data

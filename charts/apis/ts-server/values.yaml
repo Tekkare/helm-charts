@@ -73,11 +73,26 @@ persistence:
   accessModes:
     - ReadWriteOnce
 
+# Arbitrary extra pod volumes (Secret, ConfigMap, etc.).
+# Rendered under spec.template.spec.volumes verbatim.
+extraVolumes: []
+# Arbitrary extra container volumeMounts. Paired with extraVolumes.
+extraVolumeMounts: []
+
 config:
   appSecretKey: ""
   appSecretName: ""
   extraEnvVars:
     TEST: "this"
+  # List-form env vars (supports valueFrom.secretKeyRef / configMapKeyRef).
+  # Rendered verbatim after extraEnvVars. Example:
+  #   extraEnv:
+  #     - name: MY_SECRET
+  #       valueFrom:
+  #         secretKeyRef:
+  #           name: my-secret
+  #           key: value
+  extraEnv: []
   blockchain:
     enabled: false
     mina:

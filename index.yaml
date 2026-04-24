@@ -3,7 +3,7 @@ entries:
   argilla:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.996474+02:00"
+    created: "2026-04-24T14:10:20.950896+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -14,11 +14,11 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.7.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.987931+02:00"
+    created: "2026-04-24T14:10:20.941873+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -29,11 +29,11 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.6.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.980462+02:00"
+    created: "2026-04-24T14:10:20.934938+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -44,11 +44,11 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.5.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.974758+02:00"
+    created: "2026-04-24T14:10:20.929476+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -59,11 +59,11 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.4.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.968905+02:00"
+    created: "2026-04-24T14:10:20.923356+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -74,11 +74,11 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.3.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.963577+02:00"
+    created: "2026-04-24T14:10:20.918164+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -89,11 +89,11 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.2.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: latest
-    created: "2026-04-04T19:27:35.958493+02:00"
+    created: "2026-04-24T14:10:20.912862+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -104,33 +104,33 @@ entries:
     name: argilla
     type: application
     urls:
-    - argilla-0.1.0.tgz
+    - https://tekkare.github.io/helm-charts/argilla-0.1.0.tgz
     version: 0.1.0
   basic:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:35.998376+02:00"
+    created: "2026-04-24T14:10:20.953108+02:00"
     description: A Helm chart for Kubernetes
     digest: 263746dfbf16fa66a7ee9f5c6d66d75a151cd01b75cd9c74071a022f003c3b27
     name: basic
     type: application
     urls:
-    - basic-0.1.2.tgz
+    - https://tekkare.github.io/helm-charts/basic-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:35.997615+02:00"
+    created: "2026-04-24T14:10:20.952059+02:00"
     description: A Helm chart for Kubernetes
     digest: 7a36c59b7718446dbe0db2fa34a79827cd58b24bfe6dd492f85b7a4a2f228015
     name: basic
     type: application
     urls:
-    - basic-0.1.1.tgz
+    - https://tekkare.github.io/helm-charts/basic-0.1.1.tgz
     version: 0.1.1
   cloudbeaver:
   - apiVersion: v2
     appVersion: v23.3.1
-    created: "2026-04-04T19:27:35.999836+02:00"
+    created: "2026-04-24T14:10:20.954885+02:00"
     description: A Helm chart for Kubernetes to deploy cloudbeaver
     digest: 40beb8bdd01519b01d25e6b26c2f8b4d9267de657cf6b729c8d7dfe0e898ed70
     keywords:
@@ -141,11 +141,11 @@ entries:
       name: davi.barreto
     name: cloudbeaver
     urls:
-    - cloudbeaver-23.3.1.tgz
+    - https://tekkare.github.io/helm-charts/cloudbeaver-23.3.1.tgz
     version: 23.3.1
   - apiVersion: v2
     appVersion: v21.3.0
-    created: "2026-04-04T19:27:35.999065+02:00"
+    created: "2026-04-24T14:10:20.95402+02:00"
     description: A Helm chart for Kubernetes to deploy cloudbeaver
     digest: 4bd430f2236b7b3707f25414d0ec5123038cc4ad37b84d81c5b7b75205ec1f62
     keywords:
@@ -156,85 +156,85 @@ entries:
       name: davi.barreto
     name: cloudbeaver
     urls:
-    - cloudbeaver-1.0.0.tgz
+    - https://tekkare.github.io/helm-charts/cloudbeaver-1.0.0.tgz
     version: 1.0.0
   nuxt2-spa:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.001496+02:00"
+    created: "2026-04-24T14:10:20.956148+02:00"
     description: A Helm chart for Nuxt single page applicati
     digest: a260eab6f01d5faba3334a6c7408afb98c42ce7d124ef33cd2e4b78dc4ac1de6
     name: nuxt2-spa
     type: application
     urls:
-    - nuxt2-spa-0.1.1.tgz
+    - https://tekkare.github.io/helm-charts/nuxt2-spa-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.000683+02:00"
+    created: "2026-04-24T14:10:20.955444+02:00"
     description: A Helm chart for Nuxt single page applicati
     digest: e16ce3332e75df4b3957ec526326ab42a1d6185c76d7f4946c9eb0d8612e39b0
     name: nuxt2-spa
     type: application
     urls:
-    - nuxt2-spa-0.1.0.tgz
+    - https://tekkare.github.io/helm-charts/nuxt2-spa-0.1.0.tgz
     version: 0.1.0
   nuxt3:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.003715+02:00"
+    created: "2026-04-24T14:10:20.957659+02:00"
     description: A Helm chart for Nuxt3 SSR
     digest: 75a31e2262835e3472408c5ea3eccd1664042608ba18eefac666ebcdb8a37a51
     name: nuxt3
     type: application
     urls:
-    - nuxt3-0.1.3.tgz
+    - https://tekkare.github.io/helm-charts/nuxt3-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.002103+02:00"
+    created: "2026-04-24T14:10:20.956731+02:00"
     description: A Helm chart for Nuxt3 SSR
     digest: 4e3b1f155e49516778e6970d134194cb0376a8f6b7fc7d7ed1f01e6dfab30183
     name: nuxt3
     type: application
     urls:
-    - nuxt3-0.1.2.tgz
+    - https://tekkare.github.io/helm-charts/nuxt3-0.1.2.tgz
     version: 0.1.2
   oip-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.005973+02:00"
+    created: "2026-04-24T14:10:20.95986+02:00"
     description: A Helm chart for Kubernetes
     digest: 1a292dd7c8b66d4fdef3f4fb53f88e9055cab25ba6ecc7ca24bebb26befae6e2
     name: oip-api
     type: application
     urls:
-    - oip-api-0.1.2.tgz
+    - https://tekkare.github.io/helm-charts/oip-api-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.005305+02:00"
+    created: "2026-04-24T14:10:20.959029+02:00"
     description: A Helm chart for Kubernetes
     digest: 6cb3f5ec8ee53c958095bbc8eb4464188b6b9c26bc7131d9f79e0fe82a152dd4
     name: oip-api
     type: application
     urls:
-    - oip-api-0.1.1.tgz
+    - https://tekkare.github.io/helm-charts/oip-api-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.004361+02:00"
+    created: "2026-04-24T14:10:20.958222+02:00"
     description: A Helm chart for Kubernetes
     digest: 8c05755233d261e1823c4b804eb709f90363b47a15b60a9c6bd28ff87d05ba7e
     name: oip-api
     type: application
     urls:
-    - oip-api-0.1.0.tgz
+    - https://tekkare.github.io/helm-charts/oip-api-0.1.0.tgz
     version: 0.1.0
   oip-directus:
   - apiVersion: v2
     appVersion: 0.1.16
-    created: "2026-04-04T19:27:36.042085+02:00"
+    created: "2026-04-24T14:10:20.99589+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -245,11 +245,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.16.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.16.tgz
     version: 0.1.16
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.037236+02:00"
+    created: "2026-04-24T14:10:20.991017+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -260,11 +260,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.15.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.15.tgz
     version: 0.1.15
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.033499+02:00"
+    created: "2026-04-24T14:10:20.985793+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -275,11 +275,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.14.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.14.tgz
     version: 0.1.14
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.029552+02:00"
+    created: "2026-04-24T14:10:20.982165+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -290,11 +290,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.13.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.13.tgz
     version: 0.1.13
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.02556+02:00"
+    created: "2026-04-24T14:10:20.978033+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -305,11 +305,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.12.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.12.tgz
     version: 0.1.12
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.021773+02:00"
+    created: "2026-04-24T14:10:20.974166+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -320,11 +320,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.11.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.11.tgz
     version: 0.1.11
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.017713+02:00"
+    created: "2026-04-24T14:10:20.970307+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -335,11 +335,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.10.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.10.tgz
     version: 0.1.10
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.079863+02:00"
+    created: "2026-04-24T14:10:21.03213+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -350,11 +350,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.9.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.9.tgz
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.076147+02:00"
+    created: "2026-04-24T14:10:21.028642+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -365,11 +365,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.8.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.8.tgz
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.072747+02:00"
+    created: "2026-04-24T14:10:21.024785+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -380,11 +380,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.7.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.066906+02:00"
+    created: "2026-04-24T14:10:21.019467+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -395,11 +395,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.6.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.061333+02:00"
+    created: "2026-04-24T14:10:21.013889+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -410,11 +410,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.5.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.056276+02:00"
+    created: "2026-04-24T14:10:21.008881+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -425,11 +425,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.4.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.05117+02:00"
+    created: "2026-04-24T14:10:21.004303+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -440,11 +440,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.3.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.046556+02:00"
+    created: "2026-04-24T14:10:21.000032+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -455,11 +455,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.2.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.013628+02:00"
+    created: "2026-04-24T14:10:20.966773+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -470,11 +470,11 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.1.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.009686+02:00"
+    created: "2026-04-24T14:10:20.963144+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -485,12 +485,12 @@ entries:
     name: oip-directus
     type: application
     urls:
-    - oip-directus-0.1.0.tgz
+    - https://tekkare.github.io/helm-charts/oip-directus-0.1.0.tgz
     version: 0.1.0
   oip-fastapi:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.087527+02:00"
+    created: "2026-04-24T14:10:21.039777+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -501,11 +501,11 @@ entries:
     name: oip-fastapi
     type: application
     urls:
-    - oip-fastapi-0.1.1.tgz
+    - https://tekkare.github.io/helm-charts/oip-fastapi-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-04-04T19:27:36.083829+02:00"
+    created: "2026-04-24T14:10:21.035969+02:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -516,12 +516,12 @@ entries:
     name: oip-fastapi
     type: application
     urls:
-    - oip-fastapi-0.1.0.tgz
+    - https://tekkare.github.io/helm-charts/oip-fastapi-0.1.0.tgz
     version: 0.1.0
   temporal:
   - apiVersion: v2
     appVersion: 0.39.41-alpha
-    created: "2026-04-04T19:27:36.088602+02:00"
+    created: "2026-04-24T14:10:21.04077+02:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -533,12 +533,12 @@ entries:
     name: temporal
     type: application
     urls:
-    - temporal-0.39.37.tgz
+    - https://tekkare.github.io/helm-charts/temporal-0.39.37.tgz
     version: 0.39.36
   temporal-stack:
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.102322+02:00"
+    created: "2026-04-24T14:10:21.053809+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -573,11 +573,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.11.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.11.tgz
     version: 0.17.11
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.095453+02:00"
+    created: "2026-04-24T14:10:21.047085+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -612,11 +612,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.10.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.10.tgz
     version: 0.17.10
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.152615+02:00"
+    created: "2026-04-24T14:10:21.102715+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -651,11 +651,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.9.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.9.tgz
     version: 0.17.9
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.146195+02:00"
+    created: "2026-04-24T14:10:21.096562+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -690,11 +690,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.8.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.8.tgz
     version: 0.17.8
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.140018+02:00"
+    created: "2026-04-24T14:10:21.090501+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -729,11 +729,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.7.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.7.tgz
     version: 0.17.7
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.133148+02:00"
+    created: "2026-04-24T14:10:21.084313+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -768,11 +768,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.6.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.6.tgz
     version: 0.17.6
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.126824+02:00"
+    created: "2026-04-24T14:10:21.078018+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -807,11 +807,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.5.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.5.tgz
     version: 0.17.5
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.120914+02:00"
+    created: "2026-04-24T14:10:21.072348+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -846,11 +846,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.4.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.4.tgz
     version: 0.17.4
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.11461+02:00"
+    created: "2026-04-24T14:10:21.06618+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -885,11 +885,11 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.3.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.3.tgz
     version: 0.17.3
   - apiVersion: v2
     appVersion: 1.17.2
-    created: "2026-04-04T19:27:36.108464+02:00"
+    created: "2026-04-24T14:10:21.060007+02:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -924,18 +924,28 @@ entries:
     - https://github.com/temporalio/temporal
     type: application
     urls:
-    - temporal-stack-0.17.2.tgz
+    - https://tekkare.github.io/helm-charts/temporal-stack-0.17.2.tgz
     version: 0.17.2
   ts-server:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:36.157798+02:00"
+    created: "2026-04-24T14:10:21.11072+02:00"
+    description: A Helm chart for Kubernetes
+    digest: de8a35c691ac44f563e209fc49e8139d49122835bcf10cb88352cd2cf578fc1f
+    name: ts-server
+    type: application
+    urls:
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2026-04-24T14:10:21.10903+02:00"
     description: A Helm chart for Kubernetes
     digest: d5b62425a2811e42b513f7e49ca5fb8f7dd7a4cb9dda23086f7c8aa87dd1cdb6
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.7.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.1
@@ -949,62 +959,62 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:36.157054+02:00"
+    created: "2026-04-24T14:10:21.108182+02:00"
     description: A Helm chart for Kubernetes
     digest: 7394f07efde823579d48b591831c608b1703429d3644218376a47aaf013aab63
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.5.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:36.156395+02:00"
+    created: "2026-04-24T14:10:21.107288+02:00"
     description: A Helm chart for Kubernetes
     digest: c6510719feac9bcfc18753b6d3df6ddac425ae3ad12af90a29ce3d455b646979
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.4.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:36.155737+02:00"
+    created: "2026-04-24T14:10:21.106463+02:00"
     description: A Helm chart for Kubernetes
     digest: 6313e448e3bf1b9eafe2d6036b5c6c481286df208dc3f36c222222b5c868f850
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.3.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:36.15511+02:00"
+    created: "2026-04-24T14:10:21.105686+02:00"
     description: A Helm chart for Kubernetes
     digest: dceec01cf427c88db5a7ae767ae0a8590b3b623f560b9ba79cae08020849d7f8
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.2.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2026-04-04T19:27:36.154278+02:00"
+    created: "2026-04-24T14:10:21.104977+02:00"
     description: A Helm chart for Kubernetes
     digest: b505757eee9e49508090c2cb77e9859836e83bf6b19a19ac5cb5e9ee18ce81e0
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.1.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-04-04T19:27:36.1535+02:00"
+    created: "2026-04-24T14:10:21.104066+02:00"
     description: A Helm chart for Kubernetes
     digest: f26803cc63fca752546186b34741bd70cedd3d163633910dd936a7ccd5464ef7
     name: ts-server
     type: application
     urls:
-    - ts-server-0.1.0.tgz
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-04T19:27:35.953309+02:00"
+generated: "2026-04-24T14:10:20.909085+02:00"

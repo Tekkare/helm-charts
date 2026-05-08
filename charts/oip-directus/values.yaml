@@ -33,6 +33,25 @@ deployment:
   port: "8080"
   probe:
     path: "/"
+  # Startup probe protects slow-booting images (e.g. Directus 11.17 cold start ~25s
+  # while building schema cache). Default failureThreshold*periodSeconds = 5min grace.
+  # Set enabled: false to remove it.
+  startupProbe:
+    enabled: true
+    failureThreshold: 30
+    periodSeconds: 10
+    timeoutSeconds: 1
+  # Liveness/readiness fields are only emitted when set. Empty = chart-baked defaults.
+  livenessProbe: {}
+    # initialDelaySeconds: 0
+    # periodSeconds: 10
+    # failureThreshold: 3
+    # timeoutSeconds: 1
+  readinessProbe: {}
+    # initialDelaySeconds: 0
+    # periodSeconds: 10
+    # failureThreshold: 3
+    # timeoutSeconds: 1
 
 ingress:
   name: "" # Optional override for Ingress metadata.name

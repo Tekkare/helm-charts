@@ -49,14 +49,47 @@ spec:
             - name: http
               containerPort: {{ .Values.deployment.port | default 8080 }}
               protocol: TCP
+          {{- if (default true (.Values.deployment.startupProbe).enabled) }}
+          startupProbe:
+            httpGet:
+              path: {{ .Values.deployment.probe.path | default "/" | quote }}
+              port: http
+            failureThreshold: {{ (.Values.deployment.startupProbe).failureThreshold | default 30 }}
+            periodSeconds: {{ (.Values.deployment.startupProbe).periodSeconds | default 10 }}
+            timeoutSeconds: {{ (.Values.deployment.startupProbe).timeoutSeconds | default 1 }}
+          {{- end }}
           livenessProbe:
             httpGet:
               path: {{ .Values.deployment.probe.path | default "/" | quote }}
               port: http
+            {{- with (.Values.deployment.livenessProbe).initialDelaySeconds }}
+            initialDelaySeconds: {{ . }}
+            {{- end }}
+            {{- with (.Values.deployment.livenessProbe).periodSeconds }}
+            periodSeconds: {{ . }}
+            {{- end }}
+            {{- with (.Values.deployment.livenessProbe).failureThreshold }}
+            failureThreshold: {{ . }}
+            {{- end }}
+            {{- with (.Values.deployment.livenessProbe).timeoutSeconds }}
+            timeoutSeconds: {{ . }}
+            {{- end }}
           readinessProbe:
             httpGet:
               path: {{ .Values.deployment.probe.path | default "/" | quote }}
               port: http
+            {{- with (.Values.deployment.readinessProbe).initialDelaySeconds }}
+            initialDelaySeconds: {{ . }}
+            {{- end }}
+            {{- with (.Values.deployment.readinessProbe).periodSeconds }}
+            periodSeconds: {{ . }}
+            {{- end }}
+            {{- with (.Values.deployment.readinessProbe).failureThreshold }}
+            failureThreshold: {{ . }}
+            {{- end }}
+            {{- with (.Values.deployment.readinessProbe).timeoutSeconds }}
+            timeoutSeconds: {{ . }}
+            {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- if eq .Values.storage.driver "gcp" }}

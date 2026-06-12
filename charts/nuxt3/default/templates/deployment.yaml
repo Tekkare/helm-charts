@@ -26,8 +26,10 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.servicePort}}
+          {{- with .Values.resources }}
           resources:
-            {{ toYaml .Values.resources }}
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
 
           env:
             - name: NITRO_PORT

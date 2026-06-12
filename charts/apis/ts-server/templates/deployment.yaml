@@ -35,8 +35,10 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.servicePort}}
+          {{- with .Values.resources }}
           resources:
-            {{ toYaml .Values.resources }}
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           {{- if or .Values.persistence.enabled .Values.extraVolumeMounts }}
           volumeMounts:
             {{- if .Values.persistence.enabled }}

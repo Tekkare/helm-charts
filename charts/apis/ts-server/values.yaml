@@ -27,6 +27,35 @@ image:
       port: 3000
     initialDelaySeconds: 40
     periodSeconds: 10
+# Container probes, rendered verbatim under the container. All OFF by default
+# (empty = no probe, no change for existing releases). They are TOP-LEVEL keys:
+# the `image.readinessProbe` / `image.livenessProbe` blocks above are NOT read by
+# the chart (legacy leftovers, kept so existing values files keep merging).
+# Use the real port the app listens on (service.targetPort), not servicePort.
+# Rollouts already use RollingUpdate maxUnavailable 0 / maxSurge 1 (Recreate when
+# persistence.enabled), so a readinessProbe is what makes the old pod stay in
+# service until the new one answers.
+readinessProbe: {}
+  # httpGet:
+  #   path: /readyz
+  #   port: 3901
+  # periodSeconds: 5
+  # failureThreshold: 3
+livenessProbe: {}
+  # httpGet:
+  #   path: /healthz
+  #   port: 3901
+  # periodSeconds: 10
+  # failureThreshold: 3
+# Optional: holds off liveness/readiness until the app has booted once. Use it
+# for slow starts (boot-time migrations) instead of a large initialDelaySeconds.
+startupProbe: {}
+  # httpGet:
+  #   path: /healthz
+  #   port: 3901
+  # periodSeconds: 5
+  # failureThreshold: 36
+
 service:
   name: Node
   type: ClusterIP

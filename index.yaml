@@ -974,6 +974,16 @@ entries:
   ts-server:
   - apiVersion: v2
     appVersion: 0.1.1
+    created: "2026-10-28T21:04:32.777767+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 00a53f4d068d24b7f226750a2722f82db1121aa3f166f2bdbd63c0ff6dd053d2
+    name: ts-server
+    type: application
+    urls:
+    - https://tekkare.github.io/helm-charts/ts-server-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v2
+    appVersion: 0.1.1
     created: "2026-06-12T12:03:49.919136+02:00"
     description: A Helm chart for Kubernetes
     digest: 7cedb80b7322e832b469461433f01739519a5e3ea4362a62fead881d98c56f16
